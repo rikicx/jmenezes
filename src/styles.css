@@ -1,12 +1,13 @@
 :root {
-  --paper: #f3efe9;
-  --paper-deep: #e9e0d5;
-  --cream: #fbf8f3;
+  --paper: #10100f;
+  --paper-deep: #1b1a18;
+  --cream: #151513;
   --ink: #1d1d1b;
-  --muted: #716d67;
-  --line: rgba(29, 29, 27, 0.17);
+  --text: #f2eee8;
+  --muted: #aaa49c;
+  --line: rgba(255, 255, 255, 0.16);
   --white: #fffdf9;
-  --accent: #82654f;
+  --accent: #c4a17f;
   --serif: 'Playfair Display', Georgia, serif;
   --sans: 'Manrope', 'DM Sans', Arial, sans-serif;
 }
@@ -22,7 +23,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  color: var(--ink);
+  color: var(--text);
   background: var(--paper);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
@@ -109,7 +110,7 @@ a {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--ink);
+  background: var(--text);
   content: '';
   transition: width 240ms ease;
 }
@@ -121,8 +122,8 @@ a {
 .nav-cta {
   padding: 14px 21px;
   border-radius: 999px;
-  color: var(--white);
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--white);
 }
 
 .menu-toggle {
@@ -146,7 +147,7 @@ a {
   width: 64vw;
   height: 64vw;
   border-radius: 50%;
-  background: rgba(226, 215, 202, 0.62);
+  background: rgba(92, 75, 60, 0.3);
   content: '';
 }
 
@@ -235,8 +236,8 @@ h2 em {
 }
 
 .button-dark {
-  color: var(--white);
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--white);
 }
 
 .button-light {
@@ -307,7 +308,7 @@ h2 em {
 .hero-orbit {
   position: absolute;
   z-index: 1;
-  border: 1px solid rgba(29, 29, 27, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 50%;
 }
 
@@ -335,10 +336,10 @@ h2 em {
   align-items: center;
   gap: 15px;
   padding: 17px 21px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 14px;
-  background: rgba(255, 253, 249, 0.9);
-  box-shadow: 0 16px 38px rgba(48, 40, 32, 0.12);
+  background: rgba(24, 23, 21, 0.92);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.34);
   backdrop-filter: blur(10px);
 }
 
@@ -500,7 +501,7 @@ h2 em {
   display: grid;
   min-height: 790px;
   grid-template-columns: 1.22fr 0.82fr 0.82fr;
-  background: var(--ink);
+  background: #090909;
 }
 
 .story-image {
@@ -526,7 +527,7 @@ h2 em {
   justify-content: center;
   padding: 80px 48px;
   color: var(--white);
-  background: #272522;
+  background: #1d1c1a;
 }
 
 .story-number {
@@ -645,7 +646,7 @@ h2 em {
   position: relative;
   min-height: 600px;
   overflow: hidden;
-  background: #d7d0c7;
+  background: #242321;
 }
 
 .map-wrap iframe {
@@ -653,7 +654,7 @@ h2 em {
   height: 100%;
   min-height: 720px;
   border: 0;
-  filter: grayscale(1) sepia(0.12) contrast(0.86);
+  filter: grayscale(1) sepia(0.12) contrast(0.94) brightness(0.72);
 }
 
 .map-link {
@@ -665,8 +666,9 @@ h2 em {
   gap: 28px;
   padding: 17px 22px;
   border-radius: 999px;
+  color: var(--ink);
   background: var(--white);
-  box-shadow: 0 15px 34px rgba(29, 29, 27, 0.15);
+  box-shadow: 0 15px 34px rgba(0, 0, 0, 0.3);
   font-size: 13px;
   font-weight: 600;
 }
@@ -680,7 +682,7 @@ h2 em {
   overflow: hidden;
   padding: 90px clamp(24px, 9vw, 150px);
   color: var(--white);
-  background: #2a2825;
+  background: #080808;
 }
 
 .final-cta::before,
@@ -741,7 +743,7 @@ footer {
   gap: 30px;
   padding: 38px clamp(24px, 5vw, 84px);
   color: rgba(255, 255, 255, 0.66);
-  background: #201f1d;
+  background: #050505;
   font-size: 11px;
 }
 
@@ -773,9 +775,9 @@ footer small {
   gap: 10px;
   padding: 15px 19px;
   border-radius: 999px;
-  color: var(--white);
-  background: var(--ink);
-  box-shadow: 0 14px 34px rgba(29, 29, 27, 0.25);
+  color: var(--ink);
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
   font-size: 12px;
   font-weight: 600;
 }
@@ -854,14 +856,14 @@ footer small {
     gap: 6px;
     border: 1px solid var(--line);
     border-radius: 50%;
-    background: rgba(255, 253, 249, 0.72);
+    background: rgba(18, 18, 17, 0.84);
   }
 
   .menu-toggle span {
     display: block;
     width: 17px;
     height: 1px;
-    background: var(--ink);
+    background: var(--text);
   }
 
   .main-nav {
