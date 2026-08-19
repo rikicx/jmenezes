@@ -96,7 +96,7 @@ function App() {
             <div className="hero-orbit hero-orbit-one" />
             <div className="hero-orbit hero-orbit-two" />
             <div className="hero-image-wrap">
-              <img src="/images/hero-salon.jpg" alt="Imagem ilustrativa de atendimento em salão de beleza" />
+              <img src="/images/cachos-real.jpg" alt="Resultado de cabelo cacheado realizado no J.Menezess Conceito" />
             </div>
             <div className="hours-card">
               <span className="icon-circle"><ClockIcon /></span>
@@ -132,7 +132,7 @@ function App() {
               <p>Tratamentos personalizados com escuta e atenção à identidade de cada cabelo.</p>
             </article>
             <article className="experience-card card-image" data-reveal>
-              <img src="/images/care.jpg" alt="Imagem ilustrativa de profissional cuidando do cabelo de uma cliente" />
+              <img src="/images/retrato-profissional.jpg" alt="Retrato de uma profissional do J.Menezess Conceito" />
             </article>
             <article className="experience-card" data-reveal>
               <span>02</span>
@@ -144,7 +144,7 @@ function App() {
 
         <section className="salon-story">
           <div className="story-image story-image-wide" data-reveal>
-            <img src="/images/styling.jpg" alt="Imagem ilustrativa de finalização de cabelo em salão" />
+            <img src="/images/salao-interior.jpg" alt="Interior do salão J.Menezess Conceito" />
           </div>
           <div className="story-copy" data-reveal>
             <span className="story-number">197</span>
@@ -159,7 +159,23 @@ function App() {
             </a>
           </div>
           <div className="story-image story-image-tall" data-reveal>
-            <img src="/images/hair-wash.jpg" alt="Imagem ilustrativa de lavagem de cabelo em salão" />
+            <img src="/images/cabelo-finalizado.jpg" alt="Resultado de corte e finalização realizado no salão" />
+          </div>
+        </section>
+
+        <section className="real-gallery" aria-label="Resultados do J.Menezess Conceito">
+          <div className="gallery-heading" data-reveal>
+            <p className="eyebrow">Cuidado em cada detalhe</p>
+            <h2>Cabelos, unhas<br /><em>e expressão.</em></h2>
+            <p>Resultados reais do nosso espaço, feitos para valorizar o estilo de cada cliente.</p>
+          </div>
+          <div className="gallery-images">
+            <figure data-reveal>
+              <img src="/images/unhas-metalizadas.jpg" alt="Unhas com acabamento metalizado realizadas no salão" />
+            </figure>
+            <figure className="gallery-image-tall" data-reveal>
+              <img src="/images/unhas-rosa.jpg" alt="Unhas em tom rosa com detalhes brilhantes realizadas no salão" />
+            </figure>
           </div>
         </section>
 
