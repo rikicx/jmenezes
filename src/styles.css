@@ -864,8 +864,11 @@ footer small {
   background: #35d168;
 }
 
-.floating-action-whatsapp svg {
-  fill: currentColor;
+.floating-action-whatsapp img {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .floating-action-booking {

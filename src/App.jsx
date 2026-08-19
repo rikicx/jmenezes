@@ -31,12 +31,6 @@ const PhoneIcon = () => (
   </svg>
 )
 
-const WhatsAppIcon = () => (
-  <svg aria-hidden="true" viewBox="0 0 448 512" focusable="false">
-    <path d="M380.9 97.1C339-3.7 223.3-33.7 136.5 25.3 43.4 88.6 16.2 214 74.8 307.4L48 410l105.2-26.2c89.1 48.6 201.2 16.5 251.8-72.1 39.3-68.8 29.8-154.8-24.1-214.6ZM224.1 357.6c-37.6 0-74.5-10.1-106.7-29.2l-7.6-4.5-62.4 15.6 16.7-60.8-5-7.9c-58.3-92.7 8.1-213.9 117.7-213.9 110 0 176.5 121.8 117.8 214.4-14.6 23-35.8 41.4-60.8 52.5-18.3 8.2-38.7 12.5-59.7 12.5Zm77.1-104.1c-4.2-2.1-25-12.3-28.9-13.7-3.9-1.4-6.7-2.1-9.5 2.1-2.8 4.2-10.9 13.7-13.4 16.5-2.5 2.8-4.9 3.2-9.1 1.1-24.8-12.4-41.1-22.1-57.5-50.2-4.3-7.5 4.3-7 12.4-23.2 1.4-2.8.7-5.3-.4-7.4-1.1-2.1-9.5-22.9-13-31.4-3.5-8.2-7-7.1-9.5-7.2-2.5-.1-5.3-.1-8.1-.1-2.8 0-7.4 1.1-11.3 5.3-3.9 4.2-14.8 14.5-14.8 35.3s15.2 40.9 17.3 43.7c2.1 2.8 29.9 45.7 72.4 64.1 26.9 11.6 37.4 12.6 50.8 10.6 8.2-1.2 25-10.2 28.5-20.1 3.5-9.9 3.5-18.3 2.5-20.1-1.1-1.7-3.9-2.8-8.1-4.9Z" />
-  </svg>
-)
-
 const CalendarIcon = () => (
   <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
     <rect x="4" y="5" width="16" height="15" rx="2" />
@@ -287,7 +281,7 @@ function App() {
 
       <aside className="floating-actions" aria-label="Ações rápidas">
         <a className="floating-action floating-action-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Conversar pelo WhatsApp">
-          <WhatsAppIcon />
+          <img src="/whatsapp-icon.png" alt="" aria-hidden="true" />
           <span>WhatsApp</span>
         </a>
         <a className="floating-action floating-action-booking" href={bookingUrl} target="_blank" rel="noreferrer" aria-label="Agendar on-line pelo Trinks">
